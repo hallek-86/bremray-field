@@ -3,7 +3,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const HCP_API_KEY = '0590149299a44bf6b0eaceb43acdea48';
+const HCP_API_KEY = process.env.HCP_API_KEY || '0590149299a44bf6b0eaceb43acdea48';
 const HCP_BASE = 'api.housecallpro.com';
 const PORT = process.env.PORT || 3000;
 const DIST_DIR = path.join(__dirname, 'dist');
