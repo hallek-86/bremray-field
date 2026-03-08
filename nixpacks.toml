@@ -1,0 +1,5 @@
+[build]
+build = "npm install"
+
+[start]
+start = "node server.js"
